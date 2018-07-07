@@ -1,0 +1,51 @@
+.sidebar {
+  width: 112px;
+  font-family: Raleway;
+  font-weight:100;
+  color: white;
+  background-color: $green;
+  position: fixed;
+  height: 100%;
+  font-size: 20px;
+  top: 0px;
+}
+  .menu{
+    top: 300px;
+    background-color: #333843;
+    height:100%;
+  }
+  .profile{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title{
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #333843;
+    /* text-align: center; */
+    padding-top: 40px;
+    border-bottom: 1px solid #414653;
+    padding-left: 12px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }.title:hover{
+    transform: translate(5px, 0px);
+    background-color: #2196F3;
+  }
+  .title-selected{
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #2196F3;
+    /* text-align: center; */
+    padding-top: 40px;
+    border-bottom: 1px solid $green;
+    padding-left: 12px;
+    transform: translate(5px, 0px);
+    background-color: $green;
+  }

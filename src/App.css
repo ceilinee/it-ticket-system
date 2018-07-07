@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+.Background {
+  background-image: url(bluepicture.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height:800px;
+  animation: fadein 2s ease-in;
+}.Background:hover{
+  animation-play-state: paused;
+}
+.admin{
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  float: right;
+  margin: 30px;
+}
+.user{
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  float: left;
+  margin: 30px;
+}
+.App {
+  text-align: center;
+  background: #333843;
+  height:100%;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.switch{
+  font-size: 14px;
+  margin-top: 8px;
+}
+.switch-link{
+  color: #2196F3;
+}
+.selected-user{
+  font-family: Raleway;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.App-header {
+  font-family: Raleway;
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Post {
+  font-family: Raleway;
+      background: white;
+      height: 40%;
+      min-height: 400px;
+      min-width: 380px;
+      top: 60px;
+      width: 40%;
+      position: relative;
+      margin: auto;
+      font-weight: 100;
+      /* float: right; */
+      padding-top: 20px;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.text {
+  font-family: Raleway;
+  margin-right: 10px;
+}
+.load {
+  font-family: Raleway !important;
+  color: #ffffff;
+  background: #2196F3;
+  margin-top: 60px;
+  font-size: 13px !important;
+  font-family: Arial;
+  padding: 9px 20px 9px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px;
+  width: 30%;
+  font-size: 20px;
+}
+.load:hover {
+  cursor: pointer;
+  color: white;
+  background: #c3c9d6;
+}
+.App-intro {
+  font-size: large;
+}
+.Header {
+  font-size: 20px;
+  height: 1000px;
+  margin-left: 112px;
+}
+.new-ticket {
+  background-size: cover;
+  font-family: Raleway !important;
+  background-color: #fff;
+  margin: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #9E9E9E;
+  height: 400px;
+  text-align: center;
+  font-size: 14px;
+  }
+.new-ticket-button{
+  font-family: Raleway !important;
+  color: #ffffff;
+  background: #343942;
+  margin-top: 60px;
+  font-size: 13px !important;
+  font-family: Arial;
+  padding: 9px 20px 9px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px;
+  width: 30%;
+  font-size: 20px;
+}
+.text-box{
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px;
+  background-color: #f7f7f7;
+}
+.ticket {
+  height: 200px;
+  background-size: cover;
+  font-family: Raleway !important;
+  background-color: #fff;
+  margin: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #9E9E9E;
+  }
+    .ticket-body{
+      height: 170px;
+      color: black;
+      font-size:15px;
+    }
+    .ticket-date{
+      color: black;
+      font-size:13px;
+    }
+    .ticket-information{
+      margin-top:10px;
+      color: black;
+      font-size:13px;
+    }
+    .information{
+      margin-bottom: 8px;
+    }
+.status-button{
+  width: 100px;
+  background-color: #343942;
+  border: 1px solid;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
