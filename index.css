@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.Background {
+  background-image: url(bluepicture.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height:800px;
+  animation: fadein 2s ease-in;
+}.Background:hover{
+  animation-play-state: paused;
+}
+.admin{
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  float: right;
+  margin: 30px;
+}
+.user{
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  float: left;
+  margin: 30px;
+}
+.App {
+  text-align: center;
+  background: #333843;
+  height:100%;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.switch{
+  font-size: 10px;
+  margin-top: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.checkbox{
+  margin-top:30px;
+}
+.switch-link{
+  color: #2196F3;
+}
+.selected-user{
+  font-family: Raleway;
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.App-header {
+  font-family: Raleway;
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Post {
+  font-family: Raleway;
+      background: white;
+      height: 40%;
+      min-height: 400px;
+      min-width: 380px;
+      top: 60px;
+      width: 40%;
+      position: relative;
+      margin: auto;
+      font-weight: 100;
+      /* float: right; */
+      padding-top: 20px;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.text {
+  font-family: Raleway;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+.load {
+  font-family: Raleway !important;
+  color: #ffffff;
+  background: #2196F3;
+  margin-top: 60px;
+  font-size: 13px !important;
+  font-family: Arial;
+  padding: 9px 20px 9px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px;
+  width: 30%;
+  font-size: 20px;
+}
+.load:hover {
+  cursor: pointer;
+  color: white;
+  background: #c3c9d6;
+}
+.App-intro {
+  font-size: large;
+}
+.Header {
+  font-size: 20px;
+  height: 1000px;
+  margin-left: 112px;
+}
+.side-bar-label{
+  color:white;
+  text-decoration: none;
+}
+.new-ticket {
+  background-size: cover;
+  font-family: Raleway !important;
+  background-color: #fff;
+  margin: 20px;
+  margin-left: 175px;
+  margin-right: 75px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #9E9E9E;
+  height: 400px;
+  text-align: center;
+  font-size: 14px;
+  }
+.new-ticket-button{
+  font-family: Raleway !important;
+  color: #ffffff;
+  background: #343942;
+  margin-top: 60px;
+  font-size: 13px !important;
+  font-family: Arial;
+  padding: 9px 20px 9px 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px;
+  width: 30%;
+  font-size: 20px;
+}
+.text-box{
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px;
+  background-color: #f7f7f7;
+}
+.ticket {
+  height: 150px;
+  background-size: cover;
+  font-family: Raleway !important;
+  background-color: #fff;
+  margin: 20px;
+  margin-left: 175px;
+  margin-right: 75px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #9E9E9E;
+  }
+  .ticket-body{
+    height: 120px;
+    color: black;
+    font-size:15px;
+  }
+  .ticket-date{
+    color: black;
+    font-size:13px;
+  }
+  .ticket-information{
+    margin-top:10px;
+    color: black;
+    font-size:13px;
+  }
+  .information{
+    margin-bottom: 8px;
+  }
+.status-button{
+  width: 130px;
+  background-color: #343942;
+  border: 1px solid;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+.sidebar {
+  width: 112px;
+  font-family: Raleway;
+  font-weight:100;
+  color: white;
+  background-color: $green;
+  position: fixed;
+  height: 100%;
+  font-size: 20px;
+  top: 0px;
+}
+  .menu{
+    top: 300px;
+    background-color: #333843;
+    height:100%;
+  }
+  .profile{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title{
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #333843;
+    /* text-align: center; */
+    padding-top: 40px;
+    border-bottom: 1px solid #414653;
+    padding-left: 12px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }.title:hover{
+    transform: translate(5px, 0px);
+    background-color: #2196F3;
+  }
+  .title-selected{
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #2196F3;
+    /* text-align: center; */
+    padding-top: 40px;
+    border-bottom: 1px solid $green;
+    padding-left: 12px;
+    transform: translate(5px, 0px);
+    background-color: $green;
+  }
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
