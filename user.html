@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+      <title>IT Ticket System</title>
+      <meta name="description" content="The HTML5 Herald">
+      <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <div class = "sidebar">
+        <div class = "menu">
+          <a class = "side-bar-label" href="user.html">
+            <div class = "title">
+            New Ticket
+            </div>
+          </a>
+          <a class = "side-bar-label" href="user-incomplete.html">
+            <div class = "title">
+            Incomplete
+            </div>
+          </a>
+          <a class = "side-bar-label" href="user-complete.html">
+            <div class = "title">
+            Complete
+            </div>
+          </a>
+        </div>
+     </div>
+        <div class= "new-ticket">
+          <div class = "ticket-body">
+              <h1 class = "selected-user">New Ticket</h1>
+              <textarea placeholder="Title" class= "text-box" rows= "2"></textarea>
+              <textarea placeholder="Describe your problem" class= "text-box" rows= "7"></textarea>
+              <div>
+                  <label>
+                  <input
+                    name="isGoing"
+                    type="checkbox"
+                    checked={this.state.isGoing}
+                    onChange={this.handleInputChange} />
+                    Low
+                  </label>
+                  <label>
+                  <input
+                    name="isGoing"
+                    type="checkbox"
+                    checked={this.state.isGoing}
+                    onChange={this.handleInputChange} />
+                    Medium
+                  </label>
+                  <label>
+                  <input
+                    name="isGoing"
+                    type="checkbox"
+                    checked={this.state.isGoing}
+                    onChange={this.handleInputChange} />
+                    High
+                  </label>
+              </div>
+              <button class= "new-ticket-button">
+                 Submit Ticket
+              </button>
+          </div>
+        </div>
+      <script src="index.js"></script>
+    </body>
+</html>

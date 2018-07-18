@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './tab.css';
 import { Redirect } from 'react-router';
+import axios from 'axios';
 import { Tabs, TabLink, TabContent } from '../node_modules/react-tabs-redux';
 import TextField from '../node_modules/material-ui/TextField';
 import MuiThemeProvider from '../node_modules/material-ui/styles/MuiThemeProvider';
@@ -32,6 +33,10 @@ class App extends Component {
   }
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+  handleLogIn = () => {
+    return axios.get('http://localhost:3000/users/')
+    .then(response => console.log(response.data));
   }
   openAbout = () => {
     if(this.state.about){
@@ -128,7 +133,7 @@ class App extends Component {
             Login
           </button>
           <div className= "switch">
-            Not an admin? Click <span className= "switch-link" onClick={() => {this.setState({type: "Employee"})}}> here </span> for Employee login
+            Not an admin? Click <span className= "switch-link" onClick={() => {() => {this.setState({type: "Employee"})}}> here </span> for Employee login
           </div>
       </div>
     )
