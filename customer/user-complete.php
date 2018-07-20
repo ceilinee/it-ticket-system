@@ -4,29 +4,22 @@
     <head>
       <title>IT Ticket System</title>
       <meta name="description" content="The HTML5 Herald">
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="../index.css">
     </head>
     <body>
-      <div class = "sidebar">
-        <div class = "menu">
-          <a class = "side-bar-label" href="user.html">
-            <div class = "title">
-            New Ticket
-            </div>
-          </a>
-          <a class = "side-bar-label" href="user-incomplete.html">
-            <div class = "title">
-            Incomplete
-            </div>
-          </a>
-          <a class = "side-bar-label" href="user-complete.html">
-            <div class = "title">
-            Complete
-            </div>
-          </a>
-        </div>
-     </div>
-
+      <?php
+        session_start();
+        require 'sidebar.php';
+        require '../includes/dbh-inc.php';
+        $empid = $_SESSION['empID'];
+        $sql = "SELECT Ticket_ID FROM submits WHERE empID = '$empid'";
+        $res = mysqli_query($conn, $sql);
+        $tickets = array();
+        while($row = mysqli_fetch_array($res)){
+          $tickets[] = $row['Ticket_ID'];
+        }
+      ?>
+     
          <div class= "ticket">
            <div class = "ticket-body">
              Ticket Name
@@ -37,12 +30,8 @@
              Information
              </div>
            </div>
-           <div class = "information">
-             <button class = "status-button">
-               Change status
-             </button>
-           </div>
         </div>
+
         <div class= "ticket">
           <div class = "ticket-body">
             Ticket Name
@@ -53,12 +42,8 @@
             Information
             </div>
           </div>
-          <div class = "information">
-            <button class = "status-button">
-              Change status
-            </button>
-          </div>
        </div>
+
        <div class= "ticket">
          <div class = "ticket-body">
            Ticket Name
@@ -68,11 +53,6 @@
            <div class = "ticket-information">
            Information
            </div>
-         </div>
-         <div class = "information">
-           <button class = "status-button">
-             Change status
-           </button>
          </div>
       </div>
       

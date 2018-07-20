@@ -4,23 +4,12 @@
     <head>
       <title>IT Ticket System</title>
       <meta name="description" content="The HTML5 Herald">
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="../index.css">
     </head>
     <body>
-      <div class = "sidebar">
-        <div class = "menu">
-          <a class = "side-bar-label" href="admin.html">
-            <div class = "title">
-            Unassigned Tickets
-            </div>
-          </a>
-          <a class = "side-bar-label" href="admin-my.html">
-            <div class = "title">
-            My Assigned Tickets
-            </div>
-          </a>
-        </div>
-     </div>
+      <?php
+        include 'sidebar.php';
+      ?>
 
         <div class= "ticket">
            <div class = "ticket-body">
@@ -34,11 +23,10 @@
            </div>
            <div class = "information">
              <button id="myBtn" class = "status-button">
-               Assign to me
+               Change to complete
              </button>
            </div>
         </div>
-
         <div class= "ticket">
           <div class = "ticket-body">
             Ticket Name
@@ -51,11 +39,10 @@
           </div>
           <div class = "information">
             <button id="myBtn" class = "status-button">
-              Assign to me
+              Change to complete
             </button>
           </div>
         </div>
-
         <div class= "ticket">
            <div class = "ticket-body">
              Ticket Name
@@ -68,12 +55,10 @@
            </div>
            <div class = "information">
              <button id="myBtn" class = "status-button">
-               Assign to me
+               Change to complete
              </button>
            </div>
         </div>
-
-      </div>
       <script src="index.js"></script>
     </body>
 </html>

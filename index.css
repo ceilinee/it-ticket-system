@@ -6,7 +6,6 @@ body {
   font-family: sans-serif;
 }
 .Background {
-  background-image: url(bluepicture.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -32,6 +31,7 @@ body {
   float: left;
   margin: 30px;
 }
+
 .App {
   text-align: center;
   background: #333843;
@@ -62,7 +62,6 @@ body {
   margin-top: 20px;
   font-weight: 100;
 }
-
 .App-header {
   font-family: Raleway;
   background-color: #222;
@@ -202,7 +201,7 @@ body {
   font-family: Raleway;
   font-weight:100;
   color: white;
-  background-color: $green;
+  background-color: green;
   position: fixed;
   height: 100%;
   font-size: 20px;
@@ -243,10 +242,10 @@ body {
     background-color: #2196F3;
     /* text-align: center; */
     padding-top: 40px;
-    border-bottom: 1px solid $green;
+    border-bottom: 1px solid green;
     padding-left: 12px;
     transform: translate(5px, 0px);
-    background-color: $green;
+    background-color: green;
   }
   /* The Modal (background) */
 .modal {
@@ -285,3 +284,18 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+.dropdown{
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 2px;
+    color: #555;
+    font-size: inherit;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

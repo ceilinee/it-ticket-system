@@ -4,28 +4,12 @@
     <head>
       <title>IT Ticket System</title>
       <meta name="description" content="The HTML5 Herald">
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="../index.css">
     </head>
     <body>
-      <div class = "sidebar">
-        <div class = "menu">
-          <a class = "side-bar-label" href="user.html">
-            <div class = "title">
-            New Ticket
-            </div>
-          </a>
-          <a class = "side-bar-label" href="user-incomplete.html">
-            <div class = "title">
-            Incomplete
-            </div>
-          </a>
-          <a class = "side-bar-label" href="user-complete.html">
-            <div class = "title">
-            Complete
-            </div>
-          </a>
-        </div>
-     </div>
+      <?php
+        require 'sidebar.php';
+      ?>
 
         <div class= "ticket">
            <div class = "ticket-body">
@@ -39,7 +23,7 @@
            </div>
            <div class = "information">
              <button class = "status-button">
-               Change status
+               Undo Request
              </button>
            </div>
         </div>
@@ -55,7 +39,7 @@
           </div>
           <div class = "information">
             <button class = "status-button">
-              Change status
+              Undo Request
             </button>
           </div>
         </div>
@@ -71,7 +55,7 @@
            </div>
            <div class = "information">
              <button class = "status-button">
-               Change status
+               Undo Request
              </button>
            </div>
         </div>
