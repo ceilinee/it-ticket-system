@@ -5,9 +5,14 @@
             Unassigned Tickets
             </div>
           </a>
-          <a class = "side-bar-label" href="admin-my.php">
+          <a class = "side-bar-label" href="admin-unresolved.php">
             <div class = "title">
             My Assigned Tickets
+            </div>
+          </a>
+          <a class="side-bar-label" href="admin-resolved.php">
+            <div class = "title">
+            My resolved Tickets 
             </div>
           </a>
         </div>

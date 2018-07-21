@@ -12,9 +12,9 @@ if(isset($_POST['submit'])){//check if we pressed submit button
     }
     else{
         if(isset($_POST['user'])){
-        $sql = "SELECT * FROM employee WHERE Email = '$email'";
-        $result = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($result);
+            $sql = "SELECT * FROM employee WHERE Email = '$email'";
+            $result = mysqli_query($conn, $sql);
+            $resultCheck = mysqli_num_rows($result);
 
         if($resultCheck == 0){
             echo "user doesnt exist";

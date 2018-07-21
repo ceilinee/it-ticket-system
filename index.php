@@ -2,7 +2,7 @@
   include 'header.php';
 
   if(isset($_POST['logout'])){
-    session_unset();
+    session_unset();//delete all assigned variables during previous session
   }
 ?>
             <form action="includes/login-inc.php" method="POST">

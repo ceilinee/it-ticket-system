@@ -32,12 +32,12 @@
               <textarea name="description" placeholder="Describe your problem" class= "text-box" rows= "7"></textarea>
                 <div>
                   <select name="issue" class="dropdown">
-                    <option value="Software">software</option>
-                    <option value="General">general</option>
-                    <option value="Hardware">hardware</option>
-                    <option value="Change">change_request</option>
-                    <option value="New">new_employee</option>
-                    <option value="Network">network_issue</option>
+                    <option value="software">software</option>
+                    <option value="general">general</option>
+                    <option value="hardware">hardware</option>
+                    <option value="change_request">change_request</option>
+                    <option value="new_employee">new_employee</option>
+                    <option value="network_issue">network_issue</option>
                   </select>
                 </div>
               <div>
@@ -54,11 +54,7 @@
                     High
                   </label>
               </div>
-              <!--
-              <button type="submit" name="submit ticket" class= "new-ticket-button">
-                 Submit Ticket
-              </button>
-              -->
+              
               <input type="submit" class="new-ticket-button" name="submit_ticket" value="Submit Ticket">
           </div>
         </div>

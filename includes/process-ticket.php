@@ -30,6 +30,7 @@
             if($row = mysqli_fetch_assoc($res)){
                 $ticket_id = $row['Ticket_ID'];
             }
+            
             $sql = "INSERT INTO submits(empID, Ticket_ID, time_submitted) VALUES ('$empid', '$ticket_id', CURRENT_TIMESTAMP)";
             $res = mysqli_query($conn, $sql);
             if(!$res){
